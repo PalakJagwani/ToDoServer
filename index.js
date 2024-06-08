@@ -15,7 +15,12 @@ app.use(cors({
     credentials : true
 }))
 
-app.options('*', cors());
+app.options('*', (req, res) => {
+    res.set('Access-Control-Allow-Origin', '*');
+    res.set('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+    res.set('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+    res.status(200).send();
+});
 
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(bodyParser.json({extended:true}))
