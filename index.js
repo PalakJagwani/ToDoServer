@@ -10,7 +10,7 @@ const app = express()
 dotenv.config({path : './.env'})
 
 app.use(cors({
-    origin : 'http://localhost:5174/',
+    origin : 'http://localhost:5174',
     methods : 'GET, PUT, POST, DELETE',
     credentials : true
 }))
