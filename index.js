@@ -15,6 +15,8 @@ app.use(cors({
     credentials : true
 }))
 
+app.options('*', cors());
+
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(bodyParser.json({extended:true}))
 //parse json first and then do routing
