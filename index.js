@@ -9,7 +9,10 @@ import UserRoutes from './src/routes/UserRoutes.js'
 const app = express()
 dotenv.config({path : './.env'})
 
-app.use(cors())
+
+app.use(cors({
+    origin: 'http://localhost:5173'
+}));
 
 
 app.use(bodyParser.urlencoded({extended:true}))
