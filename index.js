@@ -12,14 +12,6 @@ dotenv.config({path : './.env'})
 app.use(cors());
 
 
-app.options('*', (req, res) => {
-    res.set('Access-Control-Allow-Origin', '*');
-    res.set('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
-    res.set('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-    res.status(204).send();
-});
-
-
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(bodyParser.json({extended:true}))
 //parse json first and then do routing
