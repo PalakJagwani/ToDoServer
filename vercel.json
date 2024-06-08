@@ -6,25 +6,5 @@
     ],
     "routes": [
         { "src": "/(.*)", "dest": "/index.js" }
-    ],
-    "headers" : [
-        {
-        "source" : "/(.*)",
-
-        "headers" : [
-        {
-            "key" : "Access-Control-Allow-Origin",
-            "value" : "http://localhost:5174/"
-        },
-        {
-            "key" : "Access-Control-Allow-Methods",
-            "value" : "GET, PUT, POST, DELETE"
-        },
-        {
-            "key" : "Access-Control-Allow-Haeders",
-            "value" : "Content-Type, Authorization"
-        }
-        ]
-        }
     ]
 }
