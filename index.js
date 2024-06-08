@@ -9,7 +9,15 @@ import UserRoutes from './src/routes/UserRoutes.js'
 const app = express()
 dotenv.config({path : './.env'})
 
-app.options('*', cors());
+const allowedOrigin = 'https://to-do-client-ten.vercel.app'
+
+const corsOptions = {
+    origin: allowedOrigin
+};
+
+app.use(cors(corsOptions));
+
+app.options('*', cors(corsOptions));
 
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(bodyParser.json({extended:true}))
