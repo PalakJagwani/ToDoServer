@@ -14,7 +14,7 @@
         "headers" : [
         {
             "key" : "Access-Control-Allow-Origin",
-            "value" : "http://localhost:5173"
+            "value" : "http://localhost:5174"
         },
         {
             "key" : "Access-Control-Allow-Origin",
