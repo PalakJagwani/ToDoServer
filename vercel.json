@@ -17,11 +17,11 @@
             "value" : "http://localhost:5174/"
         },
         {
-            "key" : "Access-Control-Allow-Origin",
+            "key" : "Access-Control-Allow-Methods",
             "value" : "GET, PUT, POST, DELETE"
         },
         {
-            "key" : "Access-Control-Allow-Origin",
+            "key" : "Access-Control-Allow-Haeders",
             "value" : "Content-Type, Authorization"
         }
         ]
